@@ -155,11 +155,5 @@ def AccGen():
     chars = string.digits  
     randomString = ''.join(random.choice(chars) for _ in range(size))
     randomPrefix = random.randint(0, 1)
-    Accountnum = accPrefix[randomPrefix] + randomString
-    return Accountnum
-
-
-print("Follow the format in the staff.txt file to create and authenticate staff permission")
-var = 1
-while var == 1:
-    home()
+    AccNum = accPrefix[randomPrefix] + randomString
+    return AccNum
